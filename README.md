@@ -21,7 +21,7 @@ Edit factual2csv.py to your application:
 
 2. Head over to Factual's Website and input the queries you wish to CSV-ify. Then, take note of the query URL and copy that info as you'll use it for the script. Example: `https://www.factual.com/data/t/places#filters={"$and":[{"country":{"$eq":"US"}},{"region":{"$eq":"CA"}}]}&q=McDonalds`
 
-* **Important!** Make sure you replace any +'s in your filter string with spaces when you copy it over to the script! The query parameters should not be URL encoded
+   **Important!** Make sure you replace any +'s in your filter string with spaces when you copy it over to the script! The query parameters should not be URL encoded
 
 3. Edit 'info_desired' to reflect the keys you wish to record and add your queries to the 'places' dictionary. Query and/or filter required; table defaults to 'places'. The dictionary keys will be the filenames for the output csv files.
    ```python
@@ -40,4 +40,4 @@ Edit factual2csv.py to your application:
 
 ## Limitations
 
-* Factual API limits free users to 500 results for any query
+* Factual API limits free users to 500 results for any query and 10,000 requests per day
